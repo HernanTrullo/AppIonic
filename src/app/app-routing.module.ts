@@ -8,8 +8,12 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'takslist',
     pathMatch: 'full'
+  },
+  {
+    path: 'takslist',
+    loadChildren: () => import('./takslist/takslist.module').then( m => m.TakslistPageModule)
   },
 ];
 
