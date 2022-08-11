@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // Your web app's Firebase configuration
+ firebaseConfig: {
+    apiKey: "AIzaSyAeiGu5HitemFqS3MxPWmXnOjBY8KojUL8",
+    authDomain: "optimovil-app.firebaseapp.com",
+    projectId: "optimovil-app",
+    storageBucket: "optimovil-app.appspot.com",
+    messagingSenderId: "473528574875",
+    appId: "1:473528574875:web:d51bf9ac0a111bab22b73e"
+  }
 };
 
 /*

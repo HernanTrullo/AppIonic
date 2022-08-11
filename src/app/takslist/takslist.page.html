@@ -14,9 +14,9 @@
 
 <ion-content padding>
   <ion-list>
-    <ion-item-sliding #slidingItem *ngFor ="let task of tasks">
-      <ion-item [ngClass]="{taksDone: task.status == 'done'}">
-        {{task.id }} {{task.title}}
+    <ion-item-sliding #slidingItem *ngFor ="let task of tasks; let i = 'index +1' ">
+      <ion-item [ngClass]="{taksDone: task.status === 'done'}">
+        {{ i }}. {{task.id }} {{task.title}}
       </ion-item>
 
       <ion-item-options side="start">
